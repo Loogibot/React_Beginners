@@ -44,6 +44,14 @@ function NavBar() {
     )
 }
 
+function mainBody() {
+    return (
+        <main>
+            
+        </main>
+    )
+}
+
 ReactDOM.render(
     <div>
         <NavBar />
