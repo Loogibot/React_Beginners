@@ -1,7 +1,7 @@
-function NavBar() {
+function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">NAVBAR</a>
+            <a className="navbar-brand" href="#">NAVBAR </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +34,8 @@ function NavBar() {
                     </li>
                     </ul>
                     <form className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="search" placeholder="Search"
-                        aria-label="Search" />
+                        <input className="form-control mr-sm-2" type="search" placeholder="SEARCH"
+                        aria-label="search" />
                         <button className="btn btn-outline-success my-2 my-sm-0"
                         type="submit">SEARCH </button>
                 </form>
@@ -44,7 +44,11 @@ function NavBar() {
     )
 }
 
-function mainBody() {
+function MainContent() { 
+    /* this HAS to be named 'MainContent' in 
+    order to work with React or Babel 
+    can't tell yet                    
+    */
     return (        
             <h1>HI MOM! </h1>
     )
@@ -52,9 +56,9 @@ function mainBody() {
 
 ReactDOM.render(
     <div>
-        <NavBar />
+        <Navbar />
     
-        <mainBody />
+        <MainContent />
     </div>,
     document.getElementById("root")
 )
