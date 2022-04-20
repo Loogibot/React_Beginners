@@ -1,52 +1,46 @@
 let form = document.getElementById("form");
-let input = document.getElementById("input");
+let textInput = document.getElementById("textInput");
+let dateInput = document.getElementById("dateInput");
+let textarea = document.getElementById("textarea");
 let msg = document.getElementById("msg");
-let posts = document.getElementById("posts");
+let tasks = document.getElementById("tasks");
+let add = document.getElementById("add");
 
-// creates data object
-let data = {};
-// stores input to data
-let acceptData = () => {
-    data["text"] = input.value;
-    console.log(data)
-    createPost();
-};
-
-// the first parentElement deletes the icons, the additional parentElements the entire post div
-let deletePost = (e) => {
-    e.parentElement.parentElement.remove();
-};
-
-// backticks `` are template literals, don't use ''
-// creates posts with that id
-let createPost = () => {
-    posts.innerHTML += `
-    <div>
-        <p>${data.text}</p>
-        <span class="options">
-        <i onClick="editPost(this)" class="fa fa-edit"></i>
-        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>        
-        </span>
-    </div>    
-    `;
-    input.value = "";
-}
-
-// this event listener prevents the default behaviour, in this case the submit button send a form
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("button clicked");
-
-    formValidation()
+    formValidation();
 });
 
 let formValidation = () => {
-    if (input.value === "") {
-        msg.innerHTML = "Post cannot be blank";
-        console.log("falure");
+    if (textInput.value === "") {
+        console.log("failure");
+        msg.innerHTML = "Task cannot be blank";
     } else {
         console.log("success");
         msg.innerHTML = "";
+        
         acceptData();
+
+        // this closes the modal automatically
+        add.setAttribute("data-bs-dismiss", "modal");
+        add.click();
+
+        (() => {
+            add.setAttribute("data-bs-dismiss", "");
+        })();
     }
+};
+
+let data = [];
+
+let acceptData = () => {
+    data.push({
+        text: textInput.value,
+        date: dateInput.value,
+        description: textarea.value,
+    });
+
+    localStorage.setItem("data", JSON.stringify(data));
+
+    console.log(data);
 };
