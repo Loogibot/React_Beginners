@@ -12,8 +12,10 @@ let acceptData = () => {
     createPost();
 };
 
-
-let deletePost = () => {};
+// the first parentElement deletes the icons, the additional parentElements the entire post div
+let deletePost = (e) => {
+    e.parentElement.parentElement.remove();
+};
 
 // backticks `` are template literals, don't use ''
 // creates posts with that id
