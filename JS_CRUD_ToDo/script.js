@@ -1,3 +1,4 @@
+/*
 let form = document.getElementById("form");
 let textInput = document.getElementById("textInput");
 let dateInput = document.getElementById("dateInput");
@@ -5,11 +6,41 @@ let textarea = document.getElementById("textarea");
 let msg = document.getElementById("msg");
 let tasks = document.getElementById("tasks");
 let add = document.getElementById("add");
+*/
+
+
+/*Grab elements instead of having to use the above 
+commented-out document.getElementById's for each item...
+*/
+const selectElement = (selector) => {
+	const element = document.querySelector
+	(selector);
+
+	if (element) { return element }
+	throw new Error(`Something when wrong! Make
+	sure that ${selector} exists/is typed
+	correctly.`)
+};
+
+//Nav styles on scroll
+const scrollHeader = () => {
+	const navbarElement = selectElement('#header');
+	if(this.scrollY >= 15) {
+		navbarElement.classList.add('activated');
+	} else { 
+		navbarElement.classList.remove('activated');
+	}
+}
+
+window.addEventListener('scroll', scrollHeader);
+//... up to here
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     formValidation();
 });
+
+
 
 let formValidation = () => {
     if (textInput.value === "") {
