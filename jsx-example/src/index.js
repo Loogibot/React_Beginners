@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './Navbar';
+
+function MainPage() {
+  return(
+    <div>
+      <Navbar />
+    </div>
+  )
+}
 
 ReactDOM.render(
   
-  <h1>
-    Hello, Create React App!
-  </h1>
+  <MainPage/>
 
 ,document.getElementById('root'));
