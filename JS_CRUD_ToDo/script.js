@@ -9,7 +9,7 @@ let add = document.getElementById("add");
 */
 
 
-/*Grab elements instead of having to use the above 
+/* Grabs elements instead of having to use the above 
 commented-out document.getElementById's for each item...
 */
 const selectElement = (selector) => {
