@@ -1,10 +1,11 @@
 import React from "react";
+import reactLogo from "../images/react-logo.png"
 
 export default function Navbar() {
     return (
         <nav>
             <img 
-                src="\Users\luigi\OneDrive\Coding Projects\FS_DEV PATH\REACT APP\react-logo.png"
+                src={reactLogo}
                 alt="React Logo"
                 className="nav-icon"
             />
