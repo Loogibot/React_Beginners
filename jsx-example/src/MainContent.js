@@ -1,17 +1,11 @@
 import React from "react";
-import reactLogo from "../src/images/react-logo.png"
+
 
 export default function MainContent() {
     return (
         <div>
-            <h1>Fun facts about React</h1>
-            <ul>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-            </ul>
+            <h1>This is the Navbar</h1>
+
         </div>
     )
 }

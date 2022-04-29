@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainContent from './MainContent';
-import Navbar from './Navbar';
+import Main from './components/Main';
+import Navbar from './components/Navbar';
 
 function MainPage() {
   return(
     <div>
       <Navbar />
-      <MainContent/>
+      <Main/>
     </div>
   )
 }
