@@ -1,5 +1,4 @@
 import React from 'react';
-import bigReactLogo from './images/reactjs-icon 2.png'
 
 export default function Main() {
     return (
