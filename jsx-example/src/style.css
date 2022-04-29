@@ -1,11 +1,18 @@
-.container {
+body {
+    background-color: #282D35; 
+    margin: 0px;
     font-family: Inter, sans-serif;
+    height: 100vh;
+    background-image: url(./components/images/reactjs-icon\ 2.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 25%;
 }
 
 .navbar {
     background-color: rgba(33, 34, 42, 1); 
     display: flex;
-    height: 60px;
+    height: 45px;
     padding: 30px 25px;
     align-items: center;
 }
@@ -26,7 +33,18 @@ nav > h4 {
 }
 
 .main {
-    background-color: #282D35; 
     color: white;
-    height: 100%;
+    padding: 30px 20px;
+    line-height: 1.5;
+    max-width: 350px;
+
+}
+
+h1 {
+    margin: 0;
+}
+
+::marker {
+    color: #61DAFB;
+    font-size: 3ex;
 }
