@@ -1,19 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './components/Main';
-import Navbar from './components/Navbar';
+import App from './App'
 
-function MainPage() {
-  return(
-    <div>
-      <Navbar />
-      <Main/>
-    </div>
-  )
-}
 
 ReactDOM.render(
   
-  <MainPage/>
+  <App />
 
 ,document.getElementById('root'));
