@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './Navbar';
+import App from './App'
+import './style.css'
 
-function MainPage() {
-  return(
-    <div>
-      <Navbar />
-    </div>
-  )
-}
 
 ReactDOM.render(
   
-  <MainPage/>
+  <App />
 
 ,document.getElementById('root'));
