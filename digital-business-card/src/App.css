@@ -2,14 +2,36 @@ body {
   width: 550px;
   height: 868px;
   background-color: #1A1B21;
+  font-family: Inter, sans-serif;
   color: white;
-  align-items: center;
+  padding: 30px 25px;
 }
 
-div {
+main {
+  margin: 0;
+}
+
+.container {
+  display: table;
   width: 317px;
+  height: 780px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  text-align: bottom;
+  margin: 10;
 }
 
 .headshot {
+  height: 317px;
   width: 317px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+h5 {
+  color: #F3BF99;
+
 }
