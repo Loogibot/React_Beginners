@@ -7,7 +7,6 @@ export default function Contact() {
             <h1 className="first-last-name">Luigi Mota</h1>
             <h5 className="job-title">Frontend Developer</h5>
             <h6 className="web-site">luigimota.com</h6>
-
         </nav>
 
     )

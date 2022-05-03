@@ -1,27 +1,29 @@
 body {
   width: 550px;
   height: 868px;
-  background-color: #1A1B21;
+  background-color: #23252C;
   font-family: Inter, sans-serif;
   color: white;
-  padding: 30px 25px;
-}
-
-main {
+  padding: 116px;
   margin: 0;
 }
 
+main {
+  padding: 25px;
+  display: table;
+  padding: 35px;
+  background-color: #1A1B21;
+  width: 247px;
+  margin: 0;
+  text-align: left;
+}
+
 .container {
+  background-color: #1A1B21;
   display: table;
   width: 317px;
   height: 780px;
   text-align: center;
-}
-
-.header {
-  display: flex;
-  text-align: bottom;
-  margin: 10;
 }
 
 .headshot {
@@ -34,4 +36,8 @@ main {
 h5 {
   color: #F3BF99;
 
+}
+
+.footer {
+  background-color: #161619;
 }
