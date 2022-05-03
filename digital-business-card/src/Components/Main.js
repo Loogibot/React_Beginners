@@ -4,8 +4,14 @@ export default function Main() {
     return (
         <main>
             <h3>About</h3>
-            <h6>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</h6>
-            <h1>Main Body</h1>
+            <p className="about-block">I am a frontend and mobile developer with a particular 
+                interest in making things accessible and using the latest 
+                tools. I'm constantly learning and exploring new ways
+                to implement design, software architecture and APIs to
+                the best of my ability.</p>
+            <h3>Interests</h3>
+            <p className="interests-block">Self taught musician. Visual artist and painter. Reader. 
+                Metal and Trap lover. Rock Climber. Gamer. Coffee fanatic.</p>
 
         </main>
 
