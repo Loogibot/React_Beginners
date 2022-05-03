@@ -7,6 +7,14 @@ body {
   padding: 116px;
   margin: 0;
 }
+.container {
+  background-color: #1A1B21;
+  display: table;
+  width: 317px;
+  height: 780px;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+}
 
 main {
   padding: 25px;
@@ -18,13 +26,6 @@ main {
   text-align: left;
 }
 
-.container {
-  background-color: #1A1B21;
-  display: table;
-  width: 317px;
-  height: 780px;
-  text-align: center;
-}
 
 .headshot {
   height: 317px;
@@ -39,5 +40,13 @@ h5 {
 }
 
 .footer {
+  height: 64px;
+  width: 317px;
+  border-radius: 0px 0px 10px 10px;
   background-color: #161619;
+}
+
+.socials {
+  padding-top: 8px;
+  width: 247px;
 }
