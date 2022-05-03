@@ -7,6 +7,10 @@ body {
   padding: 30px 25px;
 }
 
+main {
+  margin: 0;
+}
+
 .container {
   display: table;
   width: 317px;
@@ -27,7 +31,7 @@ body {
   object-fit: cover;
 }
 
-h3 {
+h5 {
   color: #F3BF99;
 
 }
