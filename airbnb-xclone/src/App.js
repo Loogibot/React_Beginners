@@ -7,10 +7,9 @@ import katie from './Components/Images/image 12.png'
 import wedding from './Components/Images/wedding.png'
 import bike from './Components/Images/mountain-bike.png'
 
-
 export default function App() {
   return (
-    <p className='app'>
+    <div className='app'>
       <Navbar />
       <Photos />
       <Description />
@@ -21,17 +20,17 @@ export default function App() {
           details='Life lessons with Katie Zaferes'
           price='136'/>
       <Card
-            rating='5.0'
-            count='(30)'
-            img={wedding}
-            details='Learn wedding photography'
-            price='125' />
+          rating='5.0'
+          count='(30)'
+          img={wedding}
+          details='Learn wedding photography'
+          price='125' />
       <Card
-            rating='4.8'
-            count='(2)'
-            img={bike}
-            details='Group Mountain Biking'
-            price='50' />     
-    </p>
+          rating='4.8'
+          count='(2)'
+          img={bike}
+          details='Group Mountain Biking'
+          price='50' />     
+    </div>
   );
 }
