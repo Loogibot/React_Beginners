@@ -1,12 +1,18 @@
 import './App.css';
-import Navbar from './Components/Navbar'
-import Main from './Components/Main'
+import Navbar from './Components/Navbar';
+import Photos from './Components/Photos';
+import Description from './Components/Description';
+import Card from './Components/Card';
+
 
 export default function App() {
   return (
-    <p className="App">
+    <p className='app'>
       <Navbar />
-      <Main />
+      <Photos />
+      <Description />
+      <Card />
+      
 
     </p>
   );
