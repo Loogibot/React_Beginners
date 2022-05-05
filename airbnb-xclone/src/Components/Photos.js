@@ -5,7 +5,6 @@ export default function Photos() {
     return (
         <main>
             <img className="photo-group" src={photogroup} alt="group"></img>
-
         </main>
     )
 }

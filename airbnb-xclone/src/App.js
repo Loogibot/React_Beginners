@@ -1,8 +1,8 @@
 import './App.css';
 import Navbar from './Components/Navbar';
-import Main from './Components/Main';
 import Photos from './Components/Photos';
 import Description from './Components/Description';
+import Card from './Components/Card';
 
 
 export default function App() {
@@ -11,7 +11,8 @@ export default function App() {
       <Navbar />
       <Photos />
       <Description />
-      <Main />
+      <Card />
+      
 
     </p>
   );
