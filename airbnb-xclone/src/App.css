@@ -42,8 +42,9 @@ body {
 }
 
 .card {
-  padding-left: 20px;
-  height: 200px;
+  display: block;
+  padding: 20px;
+  height: 300px;
   font-weight: lighter;
 }
 .card-info {
