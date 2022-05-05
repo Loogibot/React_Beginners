@@ -3,34 +3,22 @@ import Navbar from './Components/Navbar';
 import Photos from './Components/Photos';
 import Description from './Components/Description';
 import Card from './Components/Card';
-import katie from './Components/Images/image 12.png'
-import wedding from './Components/Images/wedding.png'
-import bike from './Components/Images/mountain-bike.png'
+import CardData from './Components/CardData';
 
 export default function App() {
+  const cardElements = CardData.map(card => {
+    return <Card rating={card.rating}
+                  count={card.count}
+                  img={card.img}
+                  details={card.details}
+                  price={card.price} />
+  })
   return (
     <div className='app'>
       <Navbar />
       <Photos />
       <Description />
-      <Card 
-          rating='5.0'
-          count='(6)'
-          img={katie}
-          details='Life lessons with Katie Zaferes'
-          price='136'/>
-      <Card
-          rating='5.0'
-          count='(30)'
-          img={wedding}
-          details='Learn wedding photography'
-          price='125' />
-      <Card
-          rating='4.8'
-          count='(2)'
-          img={bike}
-          details='Group Mountain Biking'
-          price='50' />     
+      {cardElements}
     </div>
   );
 }
