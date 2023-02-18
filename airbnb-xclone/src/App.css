@@ -39,20 +39,22 @@ body {
   font-weight: lighter;
 }
 
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 175px;
   padding: 20px;
-  height: 300px;
   font-weight: lighter;
 }
-.card-info {
-  text-align: left;
-  padding-left: 20px;
-}
-.card-score {
-  display: flex;
-}
 .card-star {
-  align-self: center;
   height: 14px;
 }
 .card-detail, .card-count, .card-person {

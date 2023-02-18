@@ -7,8 +7,8 @@ import CardData from './Components/CardData';
 
 export default function App() {
   const cardElements = CardData.map(card => {
-    return <Card rating={card.rating}
-                  count={card.count}
+    return <Card rating={card.stats.rating}
+                  count={card.stats.count}
                   img={card.img}
                   details={card.details}
                   price={card.price} />
@@ -18,7 +18,9 @@ export default function App() {
       <Navbar />
       <Photos />
       <Description />
-      {cardElements}
+      <section className='cards-list'>
+        {cardElements}
+      </section>
     </div>
   );
 }
